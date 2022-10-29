@@ -4,7 +4,7 @@
 延迟任务实现主要依赖于redis zset来做任务排序，通过拿取zset头部元素判断是否应该调用用户设定的回调方法
 # 集成步骤：
 （由于jar包没有上传到maven仓库所以需要自己将jar部署到本地仓库）
-<p>1、下载项目的release jar包或下载代码自己打jar包</p>
+<p>1、下载项目的release代码自己打jar包</p>
 <p>2、使用maven命令将jar部署到本地仓库，命令如下：mvn install:install-file -Dfile="jar包所在绝对路径" -Dpackaging=jar -DgroupId="com.yush" -DartifactId="delay-task-schedule" -Dversion="1.0.0"</p>
 <p>3、在自己项目pom文件中引入</p>
 
